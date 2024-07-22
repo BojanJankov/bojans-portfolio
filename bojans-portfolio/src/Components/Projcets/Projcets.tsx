@@ -7,7 +7,11 @@ function Projcets() {
         <h1>My projcets</h1>
       </div>
       <div className="projects-div-container">
-        <a href="#" className="card">
+        <a
+          href="https://github.com/BojanJankov/E-Store-App"
+          target="_blank"
+          className="card"
+        >
           <img
             src="../../../src/assets/portfolio-photos/e-store-app-image.png"
             alt="balloon with an emoji face"
@@ -24,7 +28,11 @@ function Projcets() {
           </span>
         </a>
 
-        <a href="#" className="card">
+        <a
+          href="https://github.com/BojanJankov/Packing-App"
+          target="_blank"
+          className="card"
+        >
           <img
             src="../../../src/assets/portfolio-photos/packing-app.png"
             alt="balloon with an emoji face"
@@ -41,7 +49,11 @@ function Projcets() {
           </span>
         </a>
 
-        <a href="#" className="card">
+        <a
+          href="https://github.com/BojanJankov/My-mini-projects"
+          target="_blank"
+          className="card"
+        >
           <img
             src="../../../src/assets/portfolio-photos/mini-projects-image.jpg"
             alt="balloon with an emoji face"

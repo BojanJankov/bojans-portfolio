@@ -23,4 +23,9 @@
 .navbar-list li a {
   text-decoration: none;
   color: black;
+  transition: 0.2s ease-in;
+}
+
+.navbar-list li a:hover {
+  color: #cb997e;
 }

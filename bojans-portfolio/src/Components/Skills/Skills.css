@@ -26,10 +26,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: black;
   font-size: 15px;
   font-weight: 500;
   border-radius: 10px;
   background-color: #cb997e;
+}
+
+.skills-div-container div:hover {
+  transition: 1s ease-out;
+  transform: translate(0.2rem, -0.2rem);
 }

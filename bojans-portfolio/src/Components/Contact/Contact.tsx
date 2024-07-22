@@ -12,11 +12,10 @@ function Contact() {
             className="email-input"
             placeholder="Your email..."
           />
-          <input
-            type="text"
+          <textarea
             className="message-input"
             placeholder="Your message here..."
-          />
+          ></textarea>
           <div className="submit-form-button-div">
             <button className="submit-form-button">Send</button>
           </div>
