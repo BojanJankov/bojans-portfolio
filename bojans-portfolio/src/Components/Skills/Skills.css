@@ -1,0 +1,35 @@
+#Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 20px 250px 20px;
+  width: 100%;
+}
+
+#Skills h1 {
+  margin: 0;
+  padding-bottom: 180px;
+  font-size: 40px;
+}
+
+.skills-div-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 30px;
+}
+
+.skills-div-container div {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #cb997e;
+}

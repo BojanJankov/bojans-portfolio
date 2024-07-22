@@ -1,0 +1,44 @@
+#Contact {
+  padding: 25px 20px 245px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Contact h1 {
+  font-size: 40px;
+}
+
+.contact-form-container {
+  padding: 50px 0;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form input {
+  width: 300px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #cb997e;
+  border-radius: 10px;
+}
+
+.submit-form-button-div {
+  display: flex;
+  width: 308px;
+  justify-content: start;
+}
+
+.form button {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #cb997e;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+.HomeSection {
+  display: grid;
+  padding: 230px 20px 20px 100px;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+}
+
+.home-section-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 100px 20px 150px;
+}
+
+.home-section-text-heading {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 40px;
+}
+
+.home-section-text-heading-h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.home-section-text-paragraph {
+  font-size: 20px;
+}
+
+.home-section-text-links {
+  display: flex;
+  padding: 20px 0 0 0;
+  justify-content: center;
+  gap: 40px;
+}
+
+.home-section-text-links button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ddbea9;
+}
+
+.home-section-image-container {
+  display: grid;
+  place-items: center;
+  padding: 20px 20px 80px 0px;
+}
+
+.home-section-image-div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  border: 2px solid #ddbea9;
+  border-radius: 50%;
+}
+
+.home-section-image-div img {
+  width: 100%;
+  height: auto;
+}

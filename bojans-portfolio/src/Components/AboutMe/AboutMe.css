@@ -1,0 +1,23 @@
+#AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 300px;
+}
+
+#AboutMe h1 {
+  font-size: 40px;
+}
+
+.about-me-text-div {
+  padding: 150px 0;
+  width: 600px;
+}
+
+.about-me-text-div p {
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-size: 22px;
+}
