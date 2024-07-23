@@ -43,5 +43,56 @@
 
   .about-me-text-div p {
     margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px;
+  }
+
+  .about-me-text-div {
+    padding: 10px 30px;
+    width: 300px;
+  }
+
+  #AboutMe h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .about-me-text-div p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px;
+  }
+
+  .about-me-text-div {
+    padding: 10px 30px;
+    width: 300px;
+  }
+
+  #AboutMe h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .about-me-text-div p {
+    margin: 0;
+    font-size: 14px;
   }
 }
