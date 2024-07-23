@@ -9,13 +9,13 @@ function HomeSection() {
           Full Stack JavaScript developer
         </h3>
         <p className="home-section-text-paragraph">
-          Hello, I'am Bojan Jankov, full-stack web developer who is currently
+          Hello, I"am Bojan Jankov, full-stack web developer who is currently
           working on his own projects and building his portfolio of fantastic
           websites and apps. If you want to see them, scroll down to the
           projects section and see them and get to know me better.
         </p>
         <div className="home-section-text-links">
-          <a href="../../../src/assets/files/Bojan Jankov CV.pdf">
+          <a href="https://bojanjankov-cv.tiiny.site/">
             <button className="cv-button">
               <i className="fa-regular fa-file"></i>
             </button>
