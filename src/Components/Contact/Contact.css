@@ -56,3 +56,15 @@
   transform: translate(0.1rem, -0.1rem);
   background-color: #cb997e;
 }
+
+@media only screen and (max-width: 440px) {
+  #Contact {
+    padding: 25px 0px 150px 0px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #Contact {
+    padding: 25px 0px 150px 0px;
+  }
+}

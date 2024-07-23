@@ -19,11 +19,42 @@
 @media only screen and (max-width: 440px) {
   .App {
     padding: 0;
+    width: 440px;
   }
 
   #main {
     min-height: 100vh;
     width: 440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .App {
+    padding: 0;
+    width: 420px;
+  }
+  #main {
+    min-height: 100vh;
+    width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .App {
+    padding: 0;
+    width: 380px;
+  }
+  #main {
+    min-height: 100vh;
+    width: 380px;
     width: 100%;
     display: flex;
     flex-direction: column;

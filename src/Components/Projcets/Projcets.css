@@ -84,4 +84,7 @@
   .projects-heading-container {
     height: 90px;
   }
+  .projects-div-container {
+    padding: 100px 0px;
+  }
 }
