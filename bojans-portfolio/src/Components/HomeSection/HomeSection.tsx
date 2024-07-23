@@ -15,24 +15,18 @@ function HomeSection() {
           projects section and see them and get to know me better.
         </p>
         <div className="home-section-text-links">
-          <a
-            href="../../../src/assets/files/Bojan Jankov CV.pdf"
-            target="_blank"
-          >
+          <a href="../../../src/assets/files/Bojan Jankov CV.pdf">
             <button className="cv-button">
               <i className="fa-regular fa-file"></i>
             </button>
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/bojan-jankov-92aba1316/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/bojan-jankov-92aba1316/">
             <button className="linkedin-button">
               <i className="fa-brands fa-linkedin"></i>
             </button>
           </a>
-          <a href="https://github.com/BojanJankov" target="_blank">
+          <a href="https://github.com/BojanJankov">
             <button className="github-button">
               <i className="fa-brands fa-github"></i>
             </button>
