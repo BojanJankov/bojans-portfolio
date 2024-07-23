@@ -37,3 +37,13 @@
   transition: 1s ease-out;
   transform: translate(0.2rem, -0.2rem);
 }
+
+@media only screen and (max-width: 440px) {
+  .skills-div-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 20px;
+  }
+}

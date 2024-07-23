@@ -65,3 +65,23 @@
 .card:is(:hover, :focus-visible) {
   --hover: 1;
 }
+
+@media only screen and (max-width: 440px) {
+  #Projcets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 200px 0px;
+  }
+  .projects-div-container {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .projects-heading-container {
+    height: 90px;
+  }
+}
