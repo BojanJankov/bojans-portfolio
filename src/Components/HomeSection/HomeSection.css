@@ -102,7 +102,7 @@
     padding: 300px 0px 140px 0px;
     grid-template-columns: 1fr 1fr;
     height: 500px;
-    width: 420px;
+    width: 400px;
   }
 
   .home-section-text-div {
@@ -110,12 +110,27 @@
     flex-direction: column;
     justify-content: center;
     padding: 0px 0px 20px 5px;
-    width: 420px;
+    width: 400px;
   }
   .home-section-text-links {
     display: flex;
     padding: 10px 30px 0 20px;
     justify-content: center;
     gap: 40px;
+  }
+  .home-section-text-paragraph {
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .home-section-text-heading {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 36px;
+  }
+
+  .home-section-text-heading-h3 {
+    margin: 0;
+    font-size: 24px;
   }
 }

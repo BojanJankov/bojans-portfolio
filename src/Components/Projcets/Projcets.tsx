@@ -13,7 +13,7 @@ function Projcets() {
           className="card"
         >
           <img
-            src="../../../src/assets/portfolio-photos/e-store-app-image.png"
+            src="https://scontent.fskp1-2.fna.fbcdn.net/v/t1.15752-9/451877912_1701811907313780_1116230338005259416_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=7wDnSz4b1JEQ7kNvgFUTWEk&_nc_ht=scontent.fskp1-2.fna&oh=03_Q7cD1QHFzxvImbiuWC5cpzrrz75tlKEKDqFyHVdByI1-tRLrLg&oe=66C79806"
             alt="balloon with an emoji face"
             className="card__img"
           />
@@ -34,7 +34,7 @@ function Projcets() {
           className="card"
         >
           <img
-            src="../../../src/assets/portfolio-photos/packing-app.png"
+            src="https://scontent.fskp1-2.fna.fbcdn.net/v/t1.15752-9/450516788_529086402880973_7072801944577014204_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8eMmLcu_GjcQ7kNvgE6Ftoo&_nc_ht=scontent.fskp1-2.fna&oh=03_Q7cD1QEE8Fc0vDT7fM9EwOMXJeaqRWTWxmECF6VoZDge4rsKeg&oe=66C7B254"
             alt="balloon with an emoji face"
             className="card__img"
           />
@@ -55,7 +55,7 @@ function Projcets() {
           className="card"
         >
           <img
-            src="../../../src/assets/portfolio-photos/mini-projects-image.jpg"
+            src="https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas-1128x635.jpg"
             alt="balloon with an emoji face"
             className="card__img"
           />
