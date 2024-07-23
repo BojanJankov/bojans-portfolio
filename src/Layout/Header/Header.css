@@ -16,6 +16,34 @@
     position: fixed;
     z-index: 99999;
     top: 10px;
-    left: -5px;
+    left: -10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .Header {
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    z-index: 99999;
+    top: 10px;
+    left: -10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .Header {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    z-index: 99999;
+    top: 10px;
+    left: 0px;
   }
 }
