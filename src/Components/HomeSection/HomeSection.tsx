@@ -9,7 +9,7 @@ function HomeSection() {
           Full Stack JavaScript developer
         </h3>
         <p className="home-section-text-paragraph">
-          Hello, I"am Bojan Jankov, full-stack web developer who is currently
+          Hello, I am Bojan Jankov, full-stack web developer who is currently
           working on his own projects and building his portfolio of fantastic
           websites and apps. If you want to see them, scroll down to the
           projects section and see them and get to know me better.
