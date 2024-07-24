@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState("");
+  const [emailValue, setEmailValue] = useState("");
+  const [messageValue, setMessageValue] = useState("");
 
   const sendEmail = (e: any) => {
     e.persist();
@@ -22,6 +24,8 @@ function Contact() {
           console.log(result);
           setStateMessage("Message sent!");
           setIsSubmitting(false);
+          setEmailValue("");
+          setMessageValue("");
           setTimeout(() => {
             setStateMessage("");
           }, 5000); // hide message after 5 seconds
@@ -44,7 +48,12 @@ function Contact() {
       <h1>Contact</h1>
       <p>Contact me directly at jankovbojan4@gmail.com</p>
       <div className="contact-form-container">
-        <form className="form" onSubmit={sendEmail}>
+        <form
+          className="form"
+          onSubmit={
+            messageValue !== "" && emailValue !== "" ? sendEmail : undefined
+          }
+        >
           <input
             type="text"
             className="user-input"
@@ -52,18 +61,25 @@ function Contact() {
             placeholder="Your name..."
           />
           <input
-            type="text"
+            type="email"
             className="email-input"
             name="user_email"
             placeholder="Your email..."
+            value={emailValue}
+            onChange={(e) => {
+              setEmailValue(e.target.value);
+            }}
           />
           <textarea
             name="message"
             className="message-input"
             placeholder="Your message here..."
+            value={messageValue}
+            onChange={(e) => {
+              setMessageValue(e.target.value);
+            }}
           ></textarea>
           <div className="submit-form-button-div">
-            {stateMessage && <p>{stateMessage}</p>}
             <button
               className="submit-form-button"
               type="submit"
@@ -72,6 +88,7 @@ function Contact() {
               Send
             </button>
           </div>
+          {stateMessage && <p>{stateMessage}</p>}
         </form>
       </div>
     </section>
