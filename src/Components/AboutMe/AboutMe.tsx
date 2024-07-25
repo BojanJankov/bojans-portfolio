@@ -1,10 +1,31 @@
 import "./AboutMe.css";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const aboutVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 function AboutMe() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div id="AboutMe">
       <h1>About me</h1>
-      <div className="about-me-text-div">
+      <motion.div
+        className="about-me-text-div square"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={aboutVariants}
+      >
         <p>
           After finishing high school I decided to fulfill my dream and become a
           developer. I enrolled in a programming academy and studied full-stack
@@ -16,7 +37,8 @@ function AboutMe() {
           technology. In my free time, I usually work out in the gym and watch
           sports.
         </p>
-      </div>
+      </motion.div>
+      {/* <div className="about-me-text-div"></div> */}
     </div>
   );
 }
