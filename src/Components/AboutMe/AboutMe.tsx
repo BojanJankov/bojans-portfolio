@@ -38,7 +38,6 @@ function AboutMe() {
           sports.
         </p>
       </motion.div>
-      {/* <div className="about-me-text-div"></div> */}
     </div>
   );
 }

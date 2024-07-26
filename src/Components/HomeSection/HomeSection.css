@@ -24,7 +24,10 @@
 }
 
 .home-section-text-paragraph {
+  width: max-content;
   font-size: 20px;
+  margin: 0;
+  letter-spacing: -1px;
 }
 
 .home-section-text-links {
@@ -165,6 +168,7 @@
     justify-content: center;
     gap: 40px;
   }
+
   .home-section-text-paragraph {
     text-align: start;
     font-size: 14px;

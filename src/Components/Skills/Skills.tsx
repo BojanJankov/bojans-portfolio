@@ -18,6 +18,8 @@ function Skills() {
         <div>Bootstrap</div>
         <div>MongoDB</div>
         <div>TypeORM</div>
+        <div>Framer Motion</div>
+        <div>Tailwind CSS</div>
       </div>
     </section>
   );
