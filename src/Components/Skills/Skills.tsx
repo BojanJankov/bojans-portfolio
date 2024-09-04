@@ -20,6 +20,9 @@ function Skills() {
         <div>TypeORM</div>
         <div>Framer Motion</div>
         <div>Tailwind CSS</div>
+        <div>SASS</div>
+        <div>Firebase</div>
+        <div>Material UI</div>
       </div>
     </section>
   );

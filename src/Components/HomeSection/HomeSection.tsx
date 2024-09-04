@@ -52,10 +52,7 @@ function HomeSection() {
       </div>
       <div className="home-section-image-container">
         <div className="home-section-image-div">
-          <img
-            src="https://scontent.fskp1-2.fna.fbcdn.net/v/t1.15752-9/448910698_2216529958697379_1390753380354295044_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=IKwCUBIwy_YQ7kNvgGuNmDA&_nc_ht=scontent.fskp1-2.fna&oh=03_Q7cD1QF1MbkiYV9X_3x4OV1RGIPRU7X-MuahnXRluFwDOyJFrA&oe=66C78E87"
-            alt="My photo"
-          />
+          <img src="/profile-image.jpg" alt="My photo" />
         </div>
       </div>
     </section>
