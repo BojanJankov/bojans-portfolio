@@ -13,8 +13,9 @@
 .projects-div-container {
   padding: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 130px;
+  gap: 100px;
 }
 
 .card {
