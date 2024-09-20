@@ -29,18 +29,18 @@ function Projcets() {
         </a>
 
         <a
-          href="https://github.com/BojanJankov/Packing-App"
+          href="https://github.com/BojanJankov/job-seeker-app"
           target="_blank"
           className="card"
         >
           <img
-            src="/packing-app.png"
+            src="/job-seeker-app.png"
             alt="balloon with an emoji face"
             className="card__img"
           />
           <span className="card__footer">
-            <span>Packing App</span>
-            <span>React + TypeScript with Redux</span>
+            <span>Job Seeker App</span>
+            <span>Angular/NestJS/PostgreSQL w/TypeORM </span>
           </span>
           <span className="card__action">
             <svg viewBox="0 0 448 512">
