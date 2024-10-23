@@ -1,9 +1,10 @@
 .Navbar {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
+  background-color: #cb997e;
+  border-radius: 20px;
 }
 
 .navbar-list {
@@ -27,7 +28,7 @@
 }
 
 .navbar-list li a:hover {
-  color: #cb997e;
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 440px) {

@@ -1,6 +1,6 @@
 .HomeSection {
   display: grid;
-  padding: 230px 20px 20px 100px;
+  padding: 180px 20px 20px 80px;
   grid-template-columns: 1fr 1fr;
   height: 500px;
 }
