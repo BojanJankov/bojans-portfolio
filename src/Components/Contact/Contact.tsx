@@ -22,7 +22,7 @@ function Contact() {
       .then(
         (result) => {
           console.log(result);
-          setStateMessage("Message sent!");
+          setStateMessage("Your message is successfully send!");
           setIsSubmitting(false);
           setEmailValue("");
           setMessageValue("");

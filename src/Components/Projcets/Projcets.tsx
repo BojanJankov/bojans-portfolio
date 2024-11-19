@@ -48,18 +48,18 @@ function Projcets() {
           </span>
         </a>
         <a
-          href="https://github.com/BojanJankov/Packing-App"
+          href="https://github.com/BojanJankov/tech-blog"
           target="_blank"
           className="card"
         >
           <img
-            src="/packing-app.png"
+            src="/tech-blog.png"
             alt="balloon with an emoji face"
             className="card__img"
           />
           <span className="card__footer">
-            <span>Packing App</span>
-            <span>React + TypeScript</span>
+            <span>Tech Sphere Blog</span>
+            <span>Angular/NestJS/PostgreSQL w/TypeORM</span>
           </span>
           <span className="card__action">
             <svg viewBox="0 0 448 512">
@@ -101,6 +101,26 @@ function Projcets() {
           <span className="card__footer">
             <span>Mini projcets</span>
             <span>Lot of projcets with Vanilla Js, NestJS and Express.js</span>
+          </span>
+          <span className="card__action">
+            <svg viewBox="0 0 448 512">
+              <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+            </svg>
+          </span>
+        </a>
+        <a
+          href="https://github.com/BojanJankov/Packing-App"
+          target="_blank"
+          className="card"
+        >
+          <img
+            src="/packing-app.png"
+            alt="balloon with an emoji face"
+            className="card__img"
+          />
+          <span className="card__footer">
+            <span>Packing App</span>
+            <span>React + TypeScript</span>
           </span>
           <span className="card__action">
             <svg viewBox="0 0 448 512">
