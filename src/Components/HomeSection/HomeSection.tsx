@@ -32,7 +32,7 @@ function HomeSection() {
         </p>
 
         <div className="home-section-text-links">
-          <a href="https://bojanjankov-cv.tiiny.site/">
+          <a href="https://amethyst-garnet-22.tiiny.site/">
             <button className="cv-button">
               <i className="fa-regular fa-file"></i>
             </button>
