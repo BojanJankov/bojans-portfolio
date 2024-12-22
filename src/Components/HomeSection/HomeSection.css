@@ -200,7 +200,7 @@
 }
 /*  */
 
-/* @media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {
   .HomeSection {
     padding: 150px 0px 140px 100px;
   }
@@ -208,14 +208,16 @@
 
 @media only screen and (max-width: 440px) {
   .HomeSection {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .home-section-main-container {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding: 300px 0px 140px 0px;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    width: 440px;
+    padding: 50px 0;
   }
 
   .home-section-text-div {
@@ -223,84 +225,30 @@
     flex-direction: column;
     justify-content: center;
     padding: 0px 0px 20px 20px;
+    width: 400px;
   }
+
   .home-section-text-links {
     display: flex;
-
-    padding: 10px 70px 0 20px;
+    padding: 10px 30px 0 20px;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .HomeSection {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 300px 0px 140px 0px;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    width: 400px;
-  }
-
   .home-section-text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 0px 20px 20px;
-    width: 400px;
+    padding: 0px 10px;
   }
   .home-section-text-links {
     display: flex;
-    padding: 10px 30px 0 20px;
+    padding: 10px 20px 0 20px;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
-  .home-section-text-paragraph {
-    text-align: start;
-    font-size: 16px;
-  }
-
-  .home-section-text-heading {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 36px;
-  }
-
-  .home-section-text-heading-h3 {
-    margin: 0;
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .HomeSection {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 300px 0px 140px 0px;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    width: 380px;
-  }
-
-  .home-section-text-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 0px 20px 20px;
-    width: 380px;
-  }
-  .home-section-text-links {
-    display: flex;
-    padding: 10px 30px 0 20px;
-    justify-content: center;
-    gap: 40px;
-  }
-
   .home-section-text-paragraph {
     text-align: start;
     font-size: 14px;
@@ -314,48 +262,66 @@
 
   .home-section-text-heading-h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 380px) {
-  .HomeSection {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 300px 0px 140px 0px;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    width: 380px;
-  }
-
+@media only screen and (max-width: 400px) {
   .home-section-text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 0px 20px 10px;
-    width: 380px;
+    padding: 0px 10px;
   }
   .home-section-text-links {
     display: flex;
-    padding: 10px 30px 0 20px;
+    padding: 10px 15px 0 20px;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
   }
   .home-section-text-paragraph {
     text-align: start;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .home-section-text-heading {
     margin: 0;
     padding: 5px 0;
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .home-section-text-heading-h3 {
     margin: 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .home-section-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 10px 0 10px;
+  }
+  .home-section-text-links {
+    display: flex;
+    padding: 10px 40px 0 0px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .home-section-text-paragraph {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .home-section-text-heading {
+    margin: 0;
+    padding: 5px 0;
     font-size: 24px;
   }
-} */
+
+  .home-section-text-heading-h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
