@@ -18,7 +18,7 @@ function AboutMe() {
   }, [controls, inView]);
   return (
     <div id="AboutMe">
-      <h1>About me</h1>
+      <h1>ABOUT ME</h1>
       <motion.div
         className="about-me-text-div square"
         ref={ref}

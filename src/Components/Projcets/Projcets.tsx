@@ -4,7 +4,7 @@ function Projcets() {
   return (
     <div id="Projcets">
       <div className="projects-heading-container">
-        <h1>My projcets</h1>
+        <h1>MY PROJECTS</h1>
       </div>
       <div className="projects-div-container">
         <a

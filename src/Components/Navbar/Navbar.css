@@ -1,10 +1,21 @@
 .Navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
-  background-color: #cb997e;
-  border-radius: 20px;
+  background-color: var(--header-footer-color);
+  padding: 15px 20px;
+}
+
+.logo-div h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.logo-div h2:hover {
+  color: var(--light-blue-color);
 }
 
 .navbar-list {
@@ -17,21 +28,21 @@
 }
 
 .navbar-list li {
-  color: black;
+  color: var(--font-color);
   font-size: 18px;
 }
 
 .navbar-list li a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
   transition: 0.2s ease-in;
 }
 
 .navbar-list li a:hover {
-  color: whitesmoke;
+  color: var(--light-blue-color);
 }
 
-@media only screen and (max-width: 440px) {
+/* @media only screen and (max-width: 440px) {
   .Navbar {
     padding: 10px;
     display: flex;
@@ -80,4 +91,4 @@
     align-items: center;
     gap: 15px;
   }
-}
+} */

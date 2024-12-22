@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 110px 0px 150px 0px;
+  padding: 50px 0px;
 }
 
 .projects-heading-container h1 {
   font-size: 40px;
+  color: var(--font-color);
 }
 
 .projects-div-container {
@@ -49,7 +50,9 @@
   display: grid;
   grid-template-rows: auto auto;
   gap: 0.5ch;
-  background: hsl(0 0% 100% / 0.5);
+  /* background: hsl(0 0% 100% / 0.5); */
+  background: var(--light-blue-color);
+  color: var(--font-color);
   backdrop-filter: blur(var(--blur));
   height: 30%;
   align-content: center;

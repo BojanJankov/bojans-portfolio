@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Contact from "./Components/Contact/Contact";
@@ -12,11 +13,13 @@ function App() {
     <section className="App">
       <Header />
       <main id="main">
-        <HomeSection />
-        <AboutMe />
-        <Projcets />
-        <Skills />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HomeSection />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projcets />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </section>
