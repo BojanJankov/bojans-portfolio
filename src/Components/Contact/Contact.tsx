@@ -45,7 +45,7 @@ function Contact() {
   };
   return (
     <section id="Contact">
-      <h1>Contact</h1>
+      <h1>CONTACT ME</h1>
       <p>Contact me directly at jankovbojan4@gmail.com</p>
       <div className="contact-form-container">
         <form

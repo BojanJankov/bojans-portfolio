@@ -1,17 +1,20 @@
 #Contact {
-  padding: 25px 20px 150px 20px;
-  width: 100%;
+  padding: 70px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--font-color);
 }
 
 #Contact h1 {
   font-size: 40px;
+  color: var(--font-color);
 }
 
 .contact-form-container {
-  padding: 50px 0;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: var(--light-blue-color);
 }
 
 .contact-form-container form {
@@ -25,7 +28,7 @@
   width: 300px;
   height: 35px;
   padding: 5px;
-  border: 1px solid #cb997e;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 }
 
@@ -33,7 +36,7 @@
   width: 300px;
   height: 150px;
   padding: 5px;
-  border: 1px solid #cb997e;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 }
 
@@ -47,17 +50,18 @@
   width: 100px;
   height: 35px;
   border-radius: 10px;
-  border: 1px solid #cb997e;
+  border: 1px solid var(--border-color);
   cursor: pointer;
 }
 
 .form button:hover {
-  transition: 1s ease-out;
+  transition: 0.3s ease-out;
   transform: translate(0.1rem, -0.1rem);
-  background-color: #cb997e;
+  background-color: var(--border-color);
+  border: 1px solid var(--font-color);
 }
 
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   #Contact {
     padding: 75px 0px 100px 0px;
   }
@@ -73,4 +77,4 @@
   #Contact {
     padding: 25px 0px 150px 0px;
   }
-}
+} */
