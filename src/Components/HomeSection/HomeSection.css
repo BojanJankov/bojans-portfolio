@@ -200,12 +200,6 @@
 }
 /*  */
 
-@media only screen and (max-width: 1600px) {
-  .HomeSection {
-    padding: 150px 0px 140px 100px;
-  }
-}
-
 @media only screen and (max-width: 440px) {
   .HomeSection {
     width: 100%;
@@ -225,14 +219,24 @@
     flex-direction: column;
     justify-content: center;
     padding: 0px 0px 20px 20px;
-    width: 400px;
+    width: 350px;
   }
 
   .home-section-text-links {
     display: flex;
     padding: 10px 30px 0 20px;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .about-me-button {
+    width: 140px;
+    height: 50px;
+  }
+
+  .docs-button {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -241,13 +245,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 10px;
+    width: 360px;
   }
   .home-section-text-links {
     display: flex;
-    padding: 10px 20px 0 20px;
+    padding: 10px 50px 0 20px;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
   }
   .home-section-text-paragraph {
     text-align: start;
@@ -264,30 +268,22 @@
     margin: 0;
     font-size: 24px;
   }
+
+  .about-me-button {
+    width: 130px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .docs-button {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  .home-section-text-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 10px;
-  }
   .home-section-text-links {
-    display: flex;
-    padding: 10px 15px 0 20px;
-    justify-content: center;
-    gap: 10px;
-  }
-  .home-section-text-paragraph {
-    text-align: start;
-    font-size: 14px;
-  }
-
-  .home-section-text-heading {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 28px;
+    gap: 15px;
   }
 
   .home-section-text-heading-h3 {
@@ -301,11 +297,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 10px 0 10px;
+    width: 300px;
   }
   .home-section-text-links {
     display: flex;
-    padding: 10px 40px 0 0px;
+    padding: 10px 10px 0 0px;
     justify-content: center;
     gap: 20px;
   }
@@ -323,5 +319,16 @@
   .home-section-text-heading-h3 {
     margin: 0;
     font-size: 18px;
+  }
+
+  .about-me-button {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .docs-button {
+    width: 40px;
+    height: 40px;
   }
 }

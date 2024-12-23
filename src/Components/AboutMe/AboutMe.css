@@ -53,16 +53,6 @@
   font-size: 18px;
 }
 
-@media only screen and (max-width: 1600px) {
-  #AboutMe {
-    padding: 90px 0px;
-  }
-
-  .about-me-text-div {
-    padding: 30px;
-  }
-}
-
 @media only screen and (max-width: 440px) {
   #AboutMe h1 {
     font-size: 26px;

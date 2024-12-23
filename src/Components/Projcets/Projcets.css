@@ -69,3 +69,43 @@
 .card:is(:hover, :focus-visible) {
   --hover: 1;
 }
+
+@media only screen and (max-width: 440px) {
+  .projects-heading-container h1 {
+    font-size: 38px;
+  }
+
+  .projects-div-container {
+    padding: 70px 0 70px 65px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .projects-heading-container h1 {
+    font-size: 32px;
+  }
+
+  .projects-div-container {
+    padding: 70px 0 70px 55px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projects-heading-container h1 {
+    font-size: 30px;
+  }
+
+  .projects-div-container {
+    padding: 70px 0 70px 50px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .projects-heading-container h1 {
+    font-size: 28px;
+  }
+
+  .projects-div-container {
+    padding: 70px 0 70px 40px;
+  }
+}

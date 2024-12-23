@@ -61,12 +61,6 @@
   border: 1px solid var(--font-color);
 }
 
-@media only screen and (max-width: 1600px) {
-  #Contact {
-    padding: 75px 0px 100px 0px;
-  }
-}
-
 @media only screen and (max-width: 440px) {
   #Contact {
     padding: 25px 0px 150px 0px;
