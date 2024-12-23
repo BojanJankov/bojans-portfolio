@@ -19,15 +19,15 @@ function AboutMe() {
   return (
     <div id="AboutMe">
       <h1>ABOUT ME</h1>
-      <div className="about-me-container">
+      <motion.div
+        className="about-me-container"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={aboutVariants}
+      >
         <div className="about-me-text-container">
-          <motion.div
-            className="about-me-text-div square"
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={aboutVariants}
-          >
+          <div className="about-me-text-div square">
             <h2>PROFILE</h2>
             <p>
               After finishing high school I decided to fulfill my dream and
@@ -40,16 +40,10 @@ function AboutMe() {
               for new things in the world of technology. In my free time, I
               usually work out in the gym and watch sports.
             </p>
-          </motion.div>
+          </div>
         </div>
         <div className="about-me-info-container">
-          <motion.div
-            className="education-container"
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={aboutVariants}
-          >
+          <div className="education-container">
             <h3>CERTIFICATIONS</h3>
             <div>
               <ul>
@@ -58,14 +52,8 @@ function AboutMe() {
                 </li>
               </ul>
             </div>
-          </motion.div>
-          <motion.div
-            className="languages-container"
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={aboutVariants}
-          >
+          </div>
+          <div className="languages-container">
             <h3>LANGUAGES</h3>
             <div>
               <ul>
@@ -75,9 +63,9 @@ function AboutMe() {
                 <li>German (Basics)</li>
               </ul>
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
