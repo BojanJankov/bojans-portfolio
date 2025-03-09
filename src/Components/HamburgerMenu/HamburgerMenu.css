@@ -51,7 +51,7 @@
 }
 
 .sidebar nav a:hover {
-  color: #f39c12;
+  color: var(--light-blue-color);
 }
 
 /* Close button */
