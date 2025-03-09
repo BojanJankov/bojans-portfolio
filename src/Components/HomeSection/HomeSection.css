@@ -44,6 +44,7 @@
   width: max-content;
   font-size: 20px;
   margin: 0;
+  line-height: 22px;
   letter-spacing: -1px;
 }
 
@@ -51,7 +52,11 @@
   display: flex;
   padding: 20px 70px 0 0;
   justify-content: left;
-  gap: 40px;
+  gap: 20px;
+}
+
+.mobile {
+  display: none;
 }
 
 .about-me-button {
@@ -214,6 +219,14 @@
     padding: 50px 0;
   }
 
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   .home-section-text-div {
     display: flex;
     flex-direction: column;
@@ -226,17 +239,17 @@
     display: flex;
     padding: 10px 30px 0 20px;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .about-me-button {
-    width: 140px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
   }
 
   .docs-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -256,6 +269,14 @@
   .home-section-text-paragraph {
     text-align: start;
     font-size: 14px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .home-section-text-heading {
@@ -283,12 +304,20 @@
 
 @media only screen and (max-width: 400px) {
   .home-section-text-links {
-    gap: 15px;
+    gap: 10px;
   }
 
   .home-section-text-heading-h3 {
     margin: 0;
     font-size: 20px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }
 
@@ -330,5 +359,13 @@
   .docs-button {
     width: 40px;
     height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }

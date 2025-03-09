@@ -30,15 +30,19 @@ function AboutMe() {
           <div className="about-me-text-div square">
             <h2>PROFILE</h2>
             <p>
-              After finishing high school I decided to fulfill my dream and
-              become a developer. I enrolled in a programming academy and
-              studied full-stack web development. I have always loved to solve
-              the problems and challenges that are given to me and create
-              solutions for them. I am dedicated and passionate individual who
-              is always ready to learn and master new things and skills as well
-              as trying out new technologies and self-improvement. Always ready
-              for new things in the world of technology. In my free time, I
-              usually work out in the gym and watch sports.
+              After finishing high school, I decided to fulfill my dream of
+              becoming a developer. I enrolled in a programming academy, where I
+              studied full-stack web development and honed my skills in building
+              modern websites and applications. I have always loved tackling
+              complex problems and finding creative solutions, which fuels my
+              passion for coding. As a dedicated and enthusiastic individual, I
+              constantly seek opportunities to learn, improve, and explore new
+              technologies. The ever-evolving world of tech excites me, and I
+              thrive on the challenge of mastering new skills and pushing my
+              limits. Beyond coding, I stay active by working out at the gym and
+              enjoying sports in my free time. I believe in maintaining a
+              balance between mind and body, as both are essential for growth
+              and success.
             </p>
           </div>
         </div>

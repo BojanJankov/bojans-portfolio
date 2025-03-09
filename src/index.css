@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* 
-Pallete
-#cb997e - borderite i boja na kartickite za skills
-#eddcd2 - pozadinata
-#f0efeb - bela boja
-#ddbea9 - koza boja
-#a5a58d - potemno siva
-#b7b7a4 - siva
-*/
-
 :root {
   --header-footer-color: #0d1b2a;
   --background-color: #1b263b;

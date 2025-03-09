@@ -3,9 +3,8 @@ import "./HomeSection.css";
 
 function HomeSection() {
   const text =
-    `Hello, I am Bojan Jankov, full-stack web developer who is currently
-          working on his own projects and building his portfolio of fantastic
-          websites and applications. If you want to see them, checkout projects section and see them and get to know me better.`.split(
+    `I’m a passionate full-stack web developer dedicated to creating innovative and  dynamic websites and applications. With a keen eye for detail and efficient code, I’m constantly working on new projects  to expand my portfolio and push the boundaries of web development.
+Feel free to explore my Projects section, where you’ll find a collection of my latest work. Whether you’re here to check out my creations or just want to learn more about me, I’d love for you to take a look around.`.split(
       " "
     );
   return (
@@ -23,7 +22,7 @@ function HomeSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  duration: 0.15,
+                  duration: 0.1,
                   delay: i / 10,
                 }}
                 key={i}
@@ -33,11 +32,18 @@ function HomeSection() {
             ))}
           </p>
           <div className="home-section-text-links">
-            <a href="/about">
-              <button className="about-me-button">More about me</button>
+            <a href="/contact">
+              <button className="about-me-button">Contact me</button>
             </a>
-            <a href="https://amethyst-garnet-22.tiiny.site/">
-              <button className="docs-button">CV</button>
+            <a href="/CV-BojanJankov.pdf" download>
+              <button className="about-me-button desktop">
+                Download CV <i className="fa-solid fa-download"></i>
+              </button>
+            </a>
+            <a href="/CV-BojanJankov.pdf" download>
+              <button className="docs-button mobile">
+                <i className="fa-solid fa-download"></i>
+              </button>
             </a>
             <a href="https://www.linkedin.com/in/bojan-jankov-92aba1316/">
               <button className="docs-button">
