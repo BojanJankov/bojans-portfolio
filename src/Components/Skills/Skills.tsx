@@ -1,86 +1,146 @@
 import "./Skills.css";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaPhp,
+  FaReact,
+  FaNodeJs,
+  FaSass,
+  FaAngular,
+  FaBootstrap,
+  FaGithub,
+  FaSlack,
+  FaGit,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiExpress,
+  SiNestjs,
+  SiPostgresql,
+  SiMongodb,
+  SiFirebase,
+  SiSwagger,
+  SiDbeaver,
+  SiVercel,
+  SiRender,
+  SiFramer,
+} from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
+import { MdOutlinePostAdd } from "react-icons/md";
 
-function Skills() {
+const iconMap: Record<string, JSX.Element> = {
+  HTML5: <FaHtml5 />,
+  CSS3: <FaCss3Alt />,
+  JavaScript: <FaJs />,
+  PHP: <FaPhp />,
+  React: <FaReact />,
+  NodeJs: <FaNodeJs />,
+  SASS: <FaSass />,
+  TypeScript: <SiTypescript />,
+  Express: <SiExpress />,
+  NestJS: <SiNestjs />,
+  PostgreSQL: <SiPostgresql />,
+  MongoDB: <SiMongodb />,
+  Firebase: <SiFirebase />,
+  Swagger: <SiSwagger />,
+  DBeaver: <SiDbeaver />,
+  // Taiga: <SiTaiga />,
+  Vercel: <SiVercel />,
+  Render: <SiRender />,
+  Angular: <FaAngular />,
+  Bootstrap: <FaBootstrap />,
+  // "Material UI": <SiMaterialui />,
+  "Framer Motion": <SiFramer />,
+  VSCode: <TbBrandVscode />,
+  Git: <FaGit />,
+  Github: <FaGithub />,
+  Slack: <FaSlack />,
+  Postman: <MdOutlinePostAdd />,
+  Docker: <FaDocker />,
+};
+
+const skillsData = [
+  {
+    category: "Personal skills",
+    skills: [
+      "Fast learner",
+      "Problem solving",
+      "Teamwork",
+      "Time Management",
+      "Positivity",
+      "Communication",
+      "Critical Thinking",
+      "Computer proficiency",
+    ],
+  },
+  {
+    category: "Front-end technologies",
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Angular",
+      "Bootstrap",
+      "Framer Motion",
+      "Tailwind CSS",
+      "SASS",
+      "Material UI",
+    ],
+  },
+  {
+    category: "Back-end technologies",
+    skills: ["Node.js", "Express.js", "NestJS"],
+  },
+  {
+    category: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "TypeORM", "Firebase"],
+  },
+  {
+    category: "General",
+    skills: [
+      "VSCode",
+      "Git",
+      "Github",
+      "Slack",
+      "Postman",
+      "Swagger",
+      "Dbeaver",
+      "Taiga",
+      "Docker",
+      "Netlify",
+      "Vercel",
+      "Render",
+    ],
+  },
+];
+
+const Skills = () => {
   return (
-    <section id="Skills">
-      <h1>SKILLS / TEHNOLOGIES</h1>
-      <div className="skills-div-container">
-        <div className="general-container">
-          <div>
-            <h3>Personal skills:</h3>
+    <section className="skills-container">
+      <h2 className="skills-heading">SKILLS / TECHNOLOGIES</h2>
+      <div className="skills">
+        {skillsData.map((group, index) => (
+          <div key={index} className="skills-group">
+            <h3>{group.category}:</h3>
+            <div className="skills-list">
+              {group.skills.map((skill, idx) => (
+                <div key={idx} className="skill-item">
+                  {iconMap[skill] && (
+                    <span className="skill-icon">{iconMap[skill]}</span>
+                  )}{" "}
+                  {skill}
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="cards-container">
-            <div>Fast learner</div>
-            <div>Problem solving</div>
-            <div>Teamwork</div>
-            <div>Time Management</div>
-            <div>Positivity</div>
-            <div>Communication</div>
-            <div>Critical Thinking</div>
-            <div>Computer proficiency</div>
-          </div>
-        </div>
-        <div className="front-end-container">
-          <div>
-            <h3>Front-end tehnologies:</h3>
-          </div>
-          <div className="cards-container">
-            <div>HTML5</div>
-            <div>CSS3</div>
-            <div>JavaScript</div>
-            <div>TypeScript</div>
-            <div>React</div>
-            <div>Angular</div>
-            <div>Bootstrap</div>
-            <div>Framer Motion</div>
-            <div>Tailwind CSS</div>
-            <div>SASS</div>
-            <div>Material UI</div>
-          </div>
-        </div>
-        <div className="back-end-container">
-          <div>
-            <h3>Back-end tehnologies:</h3>
-          </div>
-          <div className="cards-container">
-            <div>Node.js</div>
-            <div>Express.js</div>
-            <div>NestJS</div>
-          </div>
-        </div>
-        <div className="database-container">
-          <div>
-            <h3>Databases:</h3>
-          </div>
-          <div className="cards-container">
-            <div>PostgreSQL</div>
-            <div>MongoDB</div>
-            <div>TypeORM</div>
-            <div>Firebase</div>
-          </div>
-        </div>
-        <div className="general-container">
-          <div>
-            <h3>General:</h3>
-          </div>
-          <div className="cards-container">
-            <div>VSCode</div>
-            <div>Git</div>
-            <div>Github</div>
-            <div>Slack</div>
-            <div>Postman</div>
-            <div>Swagger</div>
-            <div>Dbeaver</div>
-            <div>Taiga</div>
-            <div>Docker</div>
-            <div>Netlify</div>
-            <div>Vercel</div>
-            <div>Render</div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
-}
+};
 
 export default Skills;
