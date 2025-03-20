@@ -93,7 +93,7 @@ const skillsData = [
   },
   {
     category: "Back-end technologies",
-    skills: ["Node.js", "Express.js", "NestJS"],
+    skills: ["NodeJs", "Express", "NestJS"],
   },
   {
     category: "Databases",
@@ -108,7 +108,7 @@ const skillsData = [
       "Slack",
       "Postman",
       "Swagger",
-      "Dbeaver",
+      "DBeaver",
       "Taiga",
       "Docker",
       "Netlify",
