@@ -59,7 +59,7 @@ Feel free to explore my Projects section, where you’ll find a collection of my
         </div>
         <div className="home-section-image-container">
           <div className="home-section-image-div">
-            <img src="/profile-image.jpg" alt="My photo" />
+            <img src="/about-me-profile-img.JPG" alt="My photo" />
           </div>
         </div>
       </div>
