@@ -1,12 +1,24 @@
 .Navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: var(--header-footer-color);
-  padding: 15px 20px;
+  /* background-color: var(--header-footer-color); */
+  background-color: var(--background-color);
+  padding: 20px;
+  border: none;
+}
+
+.Navbar a.active {
+  color: var(--light-blue-color);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--light-blue-color);
 }
 
 .hamburger-menu {
+  display: none;
+}
+
+.logo-div {
   display: none;
 }
 
@@ -51,6 +63,18 @@
 }
 
 @media only screen and (max-width: 440px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    align-items: center;
+  }
+
+  .logo-div {
+    display: block;
+  }
+
   .logo-div h2 {
     font-size: 16px;
   }
@@ -66,6 +90,18 @@
     color: var(--font-color);
   }
 
+  button.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 18px;
+    background-color: var(--header-footer-color);
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
   .navigation ul {
     display: block;
     list-style: none;
@@ -75,6 +111,7 @@
     margin-top: 25px;
     position: absolute;
     right: 0;
+    top: 30px;
     padding: 5px 15px 5px 5px;
   }
 
@@ -91,8 +128,20 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    align-items: center;
+  }
+
+  .logo-div {
+    display: block;
+  }
+
   .logo-div h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .navbar-list {
@@ -104,6 +153,18 @@
     display: block;
     text-align: right;
     color: var(--font-color);
+  }
+
+  button.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 18px;
+    background-color: var(--header-footer-color);
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
 
   .navigation ul {
@@ -131,8 +192,19 @@
 }
 
 @media only screen and (max-width: 380px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    align-items: center;
+  }
+
+  .logo-div {
+    display: block;
+  }
   .logo-div h2 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .navbar-list {
