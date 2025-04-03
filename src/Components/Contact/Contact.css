@@ -1,100 +1,167 @@
-#Contact {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* General Styling */
+/* body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+} */
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+  background: var(--header-footer-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
   color: var(--font-color);
 }
 
-#Contact h1 {
-  font-size: 40px;
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
   color: var(--font-color);
 }
 
+p a {
+  color: var(--light-blue-color);
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
 .contact-form-container {
-  padding: 50px;
-  border-radius: 10px;
+  width: 95%;
+}
+
+form {
+  width: 100%;
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+  color: var(--font-color);
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--border-color);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--light-blue-color);
+}
+
+/* Submit Button */
+button {
+  width: 150px;
+  display: block; /* Makes sure the button takes up the full width */
+  margin-top: 10px; /* Adds space between inputs and button */
+  padding: 12px;
+  text-align: center;
   background-color: var(--light-blue-color);
-}
-
-.contact-form-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.form input {
-  width: 300px;
-  height: 35px;
-  padding: 5px;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-.form textarea {
-  width: 300px;
-  height: 150px;
-  padding: 5px;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-.submit-form-button-div {
-  display: flex;
-  width: 308px;
-  justify-content: start;
-}
-
-.form button {
-  width: 100px;
-  height: 35px;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
-.form button:hover {
-  transition: 0.3s ease-out;
-  transform: translate(0.1rem, -0.1rem);
+button:hover {
   background-color: var(--border-color);
-  border: 1px solid var(--font-color);
 }
 
-@media only screen and (max-width: 440px) {
-  #Contact {
-    padding: 25px 0px 150px 0px;
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Success/Error Message */
+.state-message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact {
+    padding: 40px 15px;
   }
 
-  #Contact h1 {
-    font-size: 28px;
+  .contact-container {
+    max-width: 90%;
+    padding: 20px;
   }
 
-  #Contact p {
-    text-align: center;
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
     font-size: 14px;
   }
 
-  .contact-form-container {
-    padding: 25px;
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  #Contact {
-    padding: 25px 0px 150px 0px;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
   }
 
-  #Contact h1 {
-    font-size: 22px;
+  p {
+    font-size: 14px;
   }
 
-  #Contact p {
-    text-align: center;
-    font-size: 12px;
+  input,
+  textarea {
+    font-size: 14px;
   }
 
-  .contact-form-container {
-    padding: 15px;
+  button {
+    font-size: 14px;
+    padding: 10px;
   }
 }

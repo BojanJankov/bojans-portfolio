@@ -1,95 +1,83 @@
-import "./Contact.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import "./Contact.css"; // Import the CSS file
 
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const [messageValue, setMessageValue] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: any) => {
-    e.persist();
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
     emailjs
       .sendForm(
         "service_wbjd1eo",
         "template_z038dyg",
-        e.target,
+        formRef.current as HTMLFormElement,
         "q0coeJo7Am3YgNXSZ"
       )
       .then(
-        (result) => {
-          console.log(result);
-          setStateMessage("Your message is successfully send!");
+        () => {
+          setStateMessage("Your message has been successfully sent!");
           setIsSubmitting(false);
           setEmailValue("");
           setMessageValue("");
-          setTimeout(() => {
-            setStateMessage("");
-          }, 5000); // hide message after 5 seconds
+          formRef.current?.reset();
         },
-        (error) => {
-          console.log(error);
-          setStateMessage("Something went wrong, please try again later");
+        () => {
+          setStateMessage("Something went wrong, please try again later.");
           setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage("");
-          }, 5000); // hide message after 5 seconds
         }
       );
-
-    // Clears the form after sending the email
-    e.target.reset();
   };
+
   return (
-    <section id="Contact">
-      <h1>CONTACT ME</h1>
-      <p>Contact me directly at jankovbojan4@gmail.com</p>
-      <div className="contact-form-container">
-        <form
-          className="form"
-          onSubmit={
-            messageValue !== "" && emailValue !== "" ? sendEmail : undefined
-          }
-        >
-          <input
-            type="text"
-            className="user-input"
-            name="from_name"
-            placeholder="Your name..."
-          />
-          <input
-            type="email"
-            className="email-input"
-            name="user_email"
-            placeholder="Your email..."
-            value={emailValue}
-            onChange={(e) => {
-              setEmailValue(e.target.value);
-            }}
-          />
-          <textarea
-            name="message"
-            className="message-input"
-            placeholder="Your message here..."
-            value={messageValue}
-            onChange={(e) => {
-              setMessageValue(e.target.value);
-            }}
-          ></textarea>
-          <div className="submit-form-button-div">
-            <button
-              className="submit-form-button"
-              type="submit"
-              disabled={isSubmitting}
-            >
-              Send
-            </button>
-          </div>
-          {stateMessage && <p>{stateMessage}</p>}
-        </form>
+    <section id="contact">
+      <div className="contact-container">
+        <h1>Contact Me</h1>
+        <p>
+          Email me at{" "}
+          <a href="mailto:jankovbojan4@gmail.com">jankovbojan4@gmail.com</a>
+        </p>
+
+        <div className="contact-form-container">
+          <form ref={formRef} onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              value={emailValue}
+              onChange={(e) => setEmailValue(e.target.value)}
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows={5}
+              value={messageValue}
+              onChange={(e) => setMessageValue(e.target.value)}
+              required
+            ></textarea>
+
+            <div className="button-div">
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
+            </div>
+
+            {stateMessage && <p className="state-message">{stateMessage}</p>}
+          </form>
+        </div>
       </div>
     </section>
   );

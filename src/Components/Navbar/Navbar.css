@@ -92,14 +92,16 @@
 
   button.menu-button {
     position: absolute;
-    top: 20px;
+    top: 8px;
+    width: 50px;
     right: 10px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: var(--header-footer-color);
     color: var(--font-color);
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    padding: 5px;
   }
 
   .navigation ul {
@@ -157,7 +159,8 @@
 
   button.menu-button {
     position: absolute;
-    top: 20px;
+    top: 8px;
+    width: 50px;
     right: 10px;
     font-size: 18px;
     background-color: var(--header-footer-color);
