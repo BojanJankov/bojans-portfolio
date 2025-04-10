@@ -93,7 +93,7 @@ export default function HomeSection() {
           </a>
           <a href="/CV-BojanJankov.pdf" download>
             <button className="cv-btn">
-              Download CV <i className="fa-solid fa-download"></i>
+              CV <i className="fa-solid fa-download"></i>
             </button>
           </a>
           <a
