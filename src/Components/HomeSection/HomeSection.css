@@ -58,6 +58,10 @@
   justify-content: center;
 }
 
+.button-group a {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .button-group {
     justify-content: flex-start;
@@ -73,6 +77,8 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .contact-btn {
