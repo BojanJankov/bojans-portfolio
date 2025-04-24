@@ -9,7 +9,7 @@ const AboutMe = () => {
           <h2>ABOUT ME</h2>
           <h3>
             <span className="highlight">
-              Bojan Jankov - Full Stack Web developer
+              Bojan Jankov - Full Stack JavaScript developer
             </span>
           </h3>
           <p>

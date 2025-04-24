@@ -77,7 +77,7 @@ export default function HomeSection() {
     <div className="container">
       <div className="content">
         <h1 className="title">BOJAN JANKOV</h1>
-        <h2 className="subtitle">FULL STACK WEB DEVELOPER</h2>
+        <h2 className="subtitle">FULL STACK JAVASCRIPT DEVELOPER</h2>
         <p className="description">
           I’m a passionate full-stack web developer dedicated to creating
           innovative and dynamic websites and applications. With a keen eye for
