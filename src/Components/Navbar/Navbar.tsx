@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import "./Navbar.css";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import { NavLink } from "react-router-dom";

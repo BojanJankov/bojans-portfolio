@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "./Contact.css"; // Import the CSS file
+import "./Contact.css";
 
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
