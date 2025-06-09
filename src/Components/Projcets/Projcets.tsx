@@ -15,6 +15,22 @@ const clientProjects = [
 
 const personalProjects = [
   {
+    id: 0,
+    title: "BarberBook",
+    description:
+      "Barbers Booking App connects clients with professional barbers through a modern, user-friendly platform. Clients can browse barbers, view services, and book in real-time. Barbers can manage their schedules, and receive booking requests. The app includes secure authentication, a responsive design, and automated email notifications.",
+    image: "/barberbook.jpg",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "NestJS",
+      "PostgreSQL",
+      "TypeORM",
+    ],
+    link: "https://github.com/BojanJankov/barbers-booking-app",
+  },
+  {
     id: 1,
     title: "Thought exchange",
     description:
