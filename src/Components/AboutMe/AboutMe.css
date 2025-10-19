@@ -29,9 +29,10 @@
 }
 
 .text-section h2 {
-  color: var(--header-footer-color);
+  color: var(--font-color);
   font-size: 28px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .text-section .highlight {
@@ -59,6 +60,89 @@
 
 .social-icons a:hover {
   color: var(--font-color);
+}
+
+.work-experience {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.work-experience-item {
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--font-color);
+}
+
+.work-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.work-experience-card {
+  display: flex;
+  align-items: center;
+  background: var(--background-color, #f7f9fa);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 16px 20px;
+  transition: box-shadow 0.2s;
+}
+.work-experience-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+}
+
+.work-experience-logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  margin-right: 18px;
+}
+.work-experience-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.work-experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--font-color);
+}
+.work-experience-role {
+  font-weight: 600;
+  color: var(--header-footer-color, #0077b6);
+  font-size: 16px;
+  color: var(--font-color);
+}
+.work-experience-company {
+  font-size: 15px;
+  color: var(--font-color, #222);
+}
+.work-experience-date {
+  font-size: 13px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .work-experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 12px;
+  }
+  .work-experience-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* Responsive CSS */

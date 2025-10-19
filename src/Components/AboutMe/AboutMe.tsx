@@ -8,9 +8,7 @@ const AboutMe = () => {
         <div className="text-section">
           <h2>ABOUT ME</h2>
           <h3>
-            <span className="highlight">
-              Bojan Jankov - Full Stack Software developer
-            </span>
+            <span className="highlight">Full Stack Software developer</span>
           </h3>
           <p>
             After finishing high school, I decided to fulfill my dream of
@@ -40,6 +38,46 @@ const AboutMe = () => {
             <a href="https://www.facebook.com/profile.php?id=100005079098430">
               <i className="fab fa-facebook"></i>
             </a>
+          </div>
+          <h3>
+            <span className="highlight">Work Experience</span>
+          </h3>
+
+          <div className="work-experience-list">
+            <div className="work-experience-card">
+              <div className="work-experience-logo">
+                <img
+                  src="/avenga-logo.png"
+                  alt="Avenga Academy"
+                  style={{ width: "32px", height: "32px" }}
+                />
+              </div>
+              <div className="work-experience-details">
+                <span className="work-experience-role">Assistant Lecturer</span>
+                <span className="work-experience-company">
+                  Avenga Academy - Part time
+                </span>
+                <span className="work-experience-date">Nov 2024 - Present</span>
+              </div>
+            </div>
+            <div className="work-experience-card">
+              <div className="work-experience-logo">
+                <img
+                  src="/digital-fox.jpg"
+                  alt="The Digital Fox"
+                  style={{ width: "32px", height: "32px" }}
+                />
+              </div>
+              <div className="work-experience-details">
+                <span className="work-experience-role">
+                  Full Stack Software Developer
+                </span>
+                <span className="work-experience-company">
+                  The Digital Fox - Full time
+                </span>
+                <span className="work-experience-date">Jun 2025 - Present</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

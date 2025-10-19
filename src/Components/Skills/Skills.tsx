@@ -13,6 +13,7 @@ import {
   FaSlack,
   FaGit,
   FaDocker,
+  FaFigma,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -26,9 +27,18 @@ import {
   SiVercel,
   SiRender,
   SiFramer,
+  SiPosthog,
+  SiRedis,
+  SiJest,
+  SiJaeger,
+  SiNgrok,
+  SiTestinglibrary,
+  SiOpentelemetry,
+  SiPrisma,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { MdOutlinePostAdd } from "react-icons/md";
+import { FaConfluence, FaJira } from "react-icons/fa6";
 
 const iconMap: Record<string, JSX.Element> = {
   HTML5: <FaHtml5 />,
@@ -59,6 +69,17 @@ const iconMap: Record<string, JSX.Element> = {
   Slack: <FaSlack />,
   Postman: <MdOutlinePostAdd />,
   Docker: <FaDocker />,
+  Figma: <FaFigma />,
+  Jira: <FaJira />,
+  Posthog: <SiPosthog />,
+  Redis: <SiRedis />,
+  Jest: <SiJest />,
+  Jaeger: <SiJaeger />,
+  Ngrok: <SiNgrok />,
+  "Vite testing": <SiTestinglibrary />,
+  "Otel-collector": <SiOpentelemetry />,
+  Confluence: <FaConfluence />,
+  Prisma: <SiPrisma />,
 };
 
 const skillsData = [
@@ -89,6 +110,7 @@ const skillsData = [
       "Tailwind CSS",
       "SASS",
       "Material UI",
+      "Figma",
     ],
   },
   {
@@ -97,7 +119,7 @@ const skillsData = [
   },
   {
     category: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "TypeORM", "Firebase"],
+    skills: ["PostgreSQL", "MongoDB", "TypeORM", "Prisma", "Azure", "Firebase"],
   },
   {
     category: "General",
@@ -106,6 +128,9 @@ const skillsData = [
       "Git",
       "Github",
       "Slack",
+      "Jira",
+      "Confluence",
+      "Microsoft Teams",
       "Postman",
       "Swagger",
       "DBeaver",
@@ -114,6 +139,15 @@ const skillsData = [
       "Netlify",
       "Vercel",
       "Render",
+      "Posthog",
+      "Honeycomb",
+      "Jaeger",
+      "Redis",
+      "Otel-collector",
+      "Jest",
+      "Vite testing",
+      "Ngrok",
+      "RxJS",
     ],
   },
 ];

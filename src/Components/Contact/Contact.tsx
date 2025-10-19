@@ -38,7 +38,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="contact-container">
-        <h1>Contact Me</h1>
+        <h1>CONTACT ME</h1>
         <p>
           Email me at{" "}
           <a href="mailto:jankovbojan4@gmail.com">jankovbojan4@gmail.com</a>
