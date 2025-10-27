@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
   background: var(--background-color);
 }
 
@@ -33,6 +33,7 @@
   font-size: 28px;
   margin-bottom: 10px;
   font-weight: bold;
+  margin-top: 0px;
 }
 
 .text-section .highlight {
