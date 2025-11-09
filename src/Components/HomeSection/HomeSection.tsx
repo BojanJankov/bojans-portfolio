@@ -20,7 +20,7 @@ export default function HomeSection() {
           <a href="/contact">
             <button className="contact-btn">Contact Me</button>
           </a>
-          <a href="/CV-BojanJankov.pdf" download>
+          <a href="/BojanJankov-CV.pdf" download>
             <button className="cv-btn">
               CV <i className="fa-solid fa-download"></i>
             </button>
