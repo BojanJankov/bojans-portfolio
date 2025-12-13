@@ -16,7 +16,7 @@ function Navbar() {
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/"
           >
-            Home
+            HOME
           </NavLink>
         </li>
         <li>
@@ -24,7 +24,7 @@ function Navbar() {
             to="/about"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            About me
+            ABOUT ME
           </NavLink>
         </li>
         <li>
@@ -32,7 +32,7 @@ function Navbar() {
             to="/projects"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Projects
+            PROJECTS
           </NavLink>
         </li>
         <li>
@@ -40,7 +40,7 @@ function Navbar() {
             to="/skills"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Skills
+            SKILLS
           </NavLink>
         </li>
         <li>
@@ -48,7 +48,7 @@ function Navbar() {
             to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Contact
+            CONTACT
           </NavLink>
         </li>
       </ul>

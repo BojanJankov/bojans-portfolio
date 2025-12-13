@@ -35,6 +35,7 @@ import {
   SiTestinglibrary,
   SiOpentelemetry,
   SiPrisma,
+  SiNextdotjs,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { MdOutlinePostAdd } from "react-icons/md";
@@ -48,6 +49,7 @@ const iconMap: Record<string, JSX.Element> = {
   React: <FaReact />,
   NodeJs: <FaNodeJs />,
   SASS: <FaSass />,
+  NextJS: <SiNextdotjs />,
   TypeScript: <SiTypescript />,
   Express: <SiExpress />,
   NestJS: <SiNestjs />,
@@ -111,6 +113,7 @@ const skillsData = [
       "SASS",
       "Material UI",
       "Figma",
+      "NextJS",
     ],
   },
   {
@@ -148,6 +151,9 @@ const skillsData = [
       "Vite testing",
       "Ngrok",
       "RxJS",
+      "CI/CD",
+      "Playwright",
+      "Synk",
     ],
   },
 ];

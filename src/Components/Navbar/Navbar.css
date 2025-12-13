@@ -56,6 +56,8 @@
   text-decoration: none;
   color: var(--font-color);
   transition: 0.2s ease-in;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .navbar-list li a:hover {
@@ -88,20 +90,6 @@
     display: block;
     text-align: right;
     color: var(--font-color);
-  }
-
-  button.menu-button {
-    position: absolute;
-    top: 8px;
-    width: 50px;
-    right: 10px;
-    font-size: 16px;
-    background-color: var(--header-footer-color);
-    color: var(--font-color);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 5px;
   }
 
   .navigation ul {
@@ -159,11 +147,10 @@
 
   button.menu-button {
     position: absolute;
-    top: 8px;
+    top: 6px;
     width: 50px;
     right: 10px;
-    font-size: 18px;
-    background-color: var(--header-footer-color);
+    font-size: 16px;
     color: var(--font-color);
     border: none;
     cursor: pointer;
